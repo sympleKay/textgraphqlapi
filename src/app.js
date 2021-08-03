@@ -32,7 +32,7 @@ connectDB();
 app.use('/user', userRoute);
 app.use('/sms', smsRoute);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`AUTH SERVICE RUNNING ON PORT ${PORT}`);
 })
 
