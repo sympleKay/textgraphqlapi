@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "SendChamp assessment API test",
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm": "6.x"
   },
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js --exec babel-node src/app.js",
+    "start": "nodemon src/app.js --exec babel-node src/app.js",
+    "babel": "./node_modules/.bin/babel",
+    "build": "npx babel src -d dist && cp mytexta dist",
+    "prebuild": "rm -rf dist/*",
     "startprod": "npm run build && NODE_ENV=production node ./dist/app.js",
     "test": "mocha --require @babel/register src/**/**.spec.js"
   },
