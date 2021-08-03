@@ -7,7 +7,7 @@
   },
   "main": "app.js",
   "scripts": {
-    "start": "nodemon src/app.js --exec babel-node src/app.js",
+    "start": "node src/app.js --exec babel-node src/app.js",
     "babel": "./node_modules/.bin/babel",
     "build": "npx babel src -d dist && cp mytexta dist",
     "prebuild": "rm -rf dist/*",
