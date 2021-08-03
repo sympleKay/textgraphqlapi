@@ -8,8 +8,6 @@
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js --exec babel-node src/app.js",
-    "babel": "./node_modules/.bin/babel",
-    "prebuild": "rm -rf dist/*",
     "startprod": "npm run build && NODE_ENV=production node ./dist/app.js",
     "test": "mocha --require @babel/register src/**/**.spec.js"
   },
