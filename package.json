@@ -9,7 +9,7 @@
   "scripts": {
     "start": "nodemon src/app.js --exec babel-node src/app.js",
     "babel": "./node_modules/.bin/babel",
-    "build": "npx babel src -d dist && cp jwt-key dist",
+    "build": "npx babel src -d dist && cp mytexta dist",
     "prebuild": "rm -rf dist/*",
     "startprod": "npm run build && NODE_ENV=production node ./dist/app.js",
     "test": "mocha --require @babel/register src/**/**.spec.js"
@@ -40,3 +40,5 @@
     "winston": "^3.3.3"
   }
 }
+
+
