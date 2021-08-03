@@ -2,6 +2,9 @@
   "name": "sendchamp-auth-services",
   "version": "1.0.0",
   "description": "SendChamp assessment API test",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "app.js",
   "scripts": {
     "start": "nodemon src/app.js --exec babel-node src/app.js",
